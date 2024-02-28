@@ -1,10 +1,8 @@
-// const small = 1;
-// const medium = 2;
-// const large = 3;
+function calculateTax(income: number, taxYear = 2022): number {
+    if (taxYear < 2022) {
+        return income * 1.2;
+    }
+    return income * 1.3
+}
 
-// If this approach is used a string for every value must be provided.
-// PascalCase
-// enum Size { Small = 's', Medium = 'm', Large = 'l'};
-enum Size { Small = 1, Medium, Large };
-let mySize: Size = Size.Medium;
-console.log(mySize);
+calculateTax(10_000);
