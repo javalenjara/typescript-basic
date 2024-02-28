@@ -1,7 +1,10 @@
-let user: [number, string] = [1, 'Jorge'];
-// user[0].
-user[1].charAt(0);
-// This is allowed.
-// You should mantain your tuples with just 2 values.
-user.push(1);
-console.log(user);
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+// If this approach is used a string for every value must be provided.
+// PascalCase
+// enum Size { Small = 's', Medium = 'm', Large = 'l'};
+enum Size { Small = 1, Medium, Large };
+let mySize: Size = Size.Medium;
+console.log(mySize);
