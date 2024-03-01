@@ -1,5 +1,6 @@
-// Literal, wich means an exact or specific value
-type Quantity = 50 | 100;
-let quantity: Quantity = 100;
+function greet(name: string | null | undefined) {
+  if (name) console.log(name.toUpperCase());
+  else console.log("Hola!");
+}
 
-type Metric = "cm" | "in";
+greet(null);
