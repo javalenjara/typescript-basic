@@ -1,15 +1,5 @@
-type Draggable = {
-  drag: () => void;
-};
+// Literal, wich means an exact or specific value
+type Quantity = 50 | 100;
+let quantity: Quantity = 100;
 
-type Resizable = {
-  resize: () => void;
-};
-
-type UIWidget = Draggable & Resizable;
-
-//Type intersection. Similar to interfaces in java
-let textBox: UIWidget = {
-  drag: () => {},
-  resize: () => {},
-};
+type Metric = "cm" | "in";
